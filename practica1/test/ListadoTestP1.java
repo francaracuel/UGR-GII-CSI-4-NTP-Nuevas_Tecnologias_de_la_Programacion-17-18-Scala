@@ -57,12 +57,7 @@ public class ListadoTestP1 {
     */
    @Test
    public void test3ComprobarContadoresDnisRepetidosArchivo() {
-
       assert (listado.contarEmpleadosDnisRepetidos() == 4);
-
-      // Se reparan los dnis repetidos
-      listado.repararDnisRepetidos(listado.obtenerDnisRepetidosArchivo());
-
    }
 
     ///////////////////////////////////////////////////////////////////////////
@@ -74,7 +69,12 @@ public class ListadoTestP1 {
     */
     @Test
     public void test4CheckRepeatedDnisFixed() {
+
+        // Se reparan los dnis repetidos
+        listado.repararDnisRepetidos(listado.obtenerDnisRepetidosArchivo());
+
         assert (listado.contarEmpleadosDnisRepetidos() == 0);
+
     }
 
     /**
@@ -91,12 +91,7 @@ public class ListadoTestP1 {
      */
     @Test
     public void test6CheckCounterRepeatedMails() {
-
         assert (listado.contarCorreosRepetidos() == 315);
-
-        // Se reparan los correos repetidos
-        listado.repararCorreosRepetidos(listado.obtenerCorreosRepetidosArchivo());
-
     }
 
     /**
@@ -104,7 +99,12 @@ public class ListadoTestP1 {
      */
     @Test
     public void test7CheckRepeatedMailsFixed() {
+
+        // Se reparan los correos repetidos
+        listado.repararCorreosRepetidos(listado.obtenerCorreosRepetidosArchivo());
+
         assert (listado.contarCorreosRepetidos() == 0);
+
     }
 
     /**
