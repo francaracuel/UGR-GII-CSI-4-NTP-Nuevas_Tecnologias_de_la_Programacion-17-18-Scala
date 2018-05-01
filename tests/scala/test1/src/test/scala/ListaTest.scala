@@ -1,6 +1,6 @@
 import basePractica2.Lista
 import org.scalacheck.Properties
-import org.scalacheck.Prop.{AnyOperators, forAll, throws}
+import org.scalacheck.Prop.{AnyOperators, forAll}
 import org.scalacheck.Gen._
 
 object ListaTest extends Properties("ListaTest"){
