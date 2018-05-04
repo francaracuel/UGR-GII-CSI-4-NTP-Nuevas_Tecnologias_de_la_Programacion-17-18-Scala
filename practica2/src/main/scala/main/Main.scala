@@ -14,13 +14,13 @@
 
 package main
 
-import parenthesis.Parenthesis
+import coins.Coins
 
 /**
   * Se encarga de ejecutar los distintos ejercicios.
   * 1. Triángulo de Pascal
   * 2. Balanceo de paréntesis
-  * 3.
+  * 3. Contador de posibles cambios de monedas
   * 4.
   */
 object Main extends App {
@@ -49,7 +49,7 @@ object Main extends App {
 	// 2. Balanceo de paréntesis
 	//
 
-	println("Ejercicio 2. Paréntesis balanceados")
+	/*println("Ejercicio 2. Paréntesis balanceados")
 	println()
 
 	val parenthesis: Parenthesis = new Parenthesis
@@ -81,6 +81,27 @@ object Main extends App {
 		println("La cadena " + list4.mkString + " está balanceada")
 	else
 		println("La cadena " + list4.mkString + " no está balanceada")
+
+	println()*/
+
+	//
+	///////////////////////////////////////////////////////////////////////////
+
+	///////////////////////////////////////////////////////////////////////////
+	// 3. Contador de posibles cambios de monedas
+	//
+
+	println("Ejercicio 3. Contador de posibles cambios de monedas")
+	println()
+
+	val coins: Coins = new Coins
+
+	val amount = 0
+	val typeCoins: List[Int] = List(1, 2, 5, 10, 20, 50)
+
+	// Se muestra el número de cambios posibles que se puede dar para una
+	// cantidad
+	println(coins.getNumberChanges(amount, typeCoins))
 
 	println()
 
