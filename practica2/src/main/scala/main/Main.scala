@@ -15,6 +15,10 @@
 package main
 
 import binarySearch.BinarySearch
+import coins.Coins
+import lista.Lista
+import parenthesis.Parenthesis
+import pascalsTriangle.PascalsTriangle
 
 /**
   * Se encarga de ejecutar los distintos ejercicios.
@@ -29,7 +33,7 @@ object Main extends App {
 	// 1. Triángulo de Pascal
 	//
 
-	/*println("Ejercicio 1. Triángulo de Pascal")
+	println("Ejercicio 1. Triángulo de Pascal")
 	println()
 
 	val pascalsTriangle: PascalsTriangle = new PascalsTriangle
@@ -40,7 +44,7 @@ object Main extends App {
 	// Se muestra el valor que ocupa la fila 15 y columna 10
 	println(pascalsTriangle.getValue(15, 10))
 
-	println()*/
+	println()
 
 	//
 	///////////////////////////////////////////////////////////////////////////
@@ -49,40 +53,40 @@ object Main extends App {
 	// 2. Balanceo de paréntesis
 	//
 
-	/*println("Ejercicio 2. Paréntesis balanceados")
+	println("Ejercicio 2. Paréntesis balanceados")
 	println()
 
 	val parenthesis: Parenthesis = new Parenthesis
 
 	// Sí
-	val list1: List[Char] = List('(', '1', ')')
-	val list2: List[Char] = List('(', '(', '(', '(', '2', ')', ')', ')', ')')
+	val list21: List[Char] = List('(', '1', ')')
+	val list22: List[Char] = List('(', '(', '(', '(', '2', ')', ')', ')', ')')
 
 	// No
-	val list3: List[Char] = List('(', '(', ')', ')', ')', '(', ')', ')', ')')
-	val list4: List[Char] = List('(', '1', '(', '2', ')', ')', '(', '3', ')', '(')
+	val list23: List[Char] = List('(', '(', ')', ')', ')', '(', ')', ')', ')')
+	val list24: List[Char] = List('(', '1', '(', '2', ')', ')', '(', '3', ')', '(')
 
-	if(parenthesis.isBalanced(list1))
-		println("La cadena " + list1.mkString + " está balanceada")
+	if(parenthesis.isBalanced(list21))
+		println("La cadena " + list21.mkString + " está balanceada")
 	else
-		println("La cadena " + list1.mkString + " no está balanceada")
+		println("La cadena " + list21.mkString + " no está balanceada")
 
-	if(parenthesis.isBalanced(list2))
-		println("La cadena " + list2.mkString + " está balanceada")
+	if(parenthesis.isBalanced(list22))
+		println("La cadena " + list22.mkString + " está balanceada")
 	else
-		println("La cadena " + list2.mkString + " no está balanceada")
+		println("La cadena " + list22.mkString + " no está balanceada")
 
-	if(parenthesis.isBalanced(list3))
-		println("La cadena " + list3.mkString + " está balanceada")
+	if(parenthesis.isBalanced(list23))
+		println("La cadena " + list23.mkString + " está balanceada")
 	else
-		println("La cadena " + list3.mkString + " no está balanceada")
+		println("La cadena " + list23.mkString + " no está balanceada")
 
-	if(parenthesis.isBalanced(list4))
-		println("La cadena " + list4.mkString + " está balanceada")
+	if(parenthesis.isBalanced(list24))
+		println("La cadena " + list24.mkString + " está balanceada")
 	else
-		println("La cadena " + list4.mkString + " no está balanceada")
+		println("La cadena " + list24.mkString + " no está balanceada")
 
-	println()*/
+	println()
 
 	//
 	///////////////////////////////////////////////////////////////////////////
@@ -91,7 +95,7 @@ object Main extends App {
 	// 3. Contador de posibles cambios de monedas
 	//
 
-	/*println("Ejercicio 3. Contador de posibles cambios de monedas")
+	println("Ejercicio 3. Contador de posibles cambios de monedas")
 	println()
 
 	val coins: Coins = new Coins
@@ -103,7 +107,7 @@ object Main extends App {
 	// cantidad
 	println(coins.getNumberChanges(amount, typeCoins))
 
-	println()*/
+	println()
 
 	//
 	///////////////////////////////////////////////////////////////////////////
@@ -117,13 +121,44 @@ object Main extends App {
 
 	val binarySearch: BinarySearch = new BinarySearch
 
-	val list1: Array[Char] = Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i')
+	val list41: Array[Char] = Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i')
 	val search1: Char = 'e'
 
 	// Se realiza la búsqueda binaria
-	val result = binarySearch.busquedaBinaria[Char](list1, search1, _ < _)
+	val result = binarySearch.busquedaBinaria[Char](list41, search1, _ < _)
 
 	println(result)
+	println()
+
+	//
+	///////////////////////////////////////////////////////////////////////////
+
+	///////////////////////////////////////////////////////////////////////////
+	// Funciones sobre clase Lista propia
+	//
+
+	println("Funciones sobre la clase propia Lista")
+	println()
+
+	val list1 = Lista(1, 2, 3, 4)
+	val list2 = Lista(1, 2, 3)
+	val list3 = Lista(1, 2)
+
+	println(Lista.sumaEnteros(list1))
+
+	println(Lista.productoEnteros(list1))
+
+	println(Lista.sumaEnteros(Lista.concatenar(list3, list2)))
+
+	println(Lista.sumaFoldRight(Lista.concatenar(list3, list2)))
+
+	println(Lista.asignarCabeza(list1, 10))
+
+	println(Lista.eliminar(list1, 3))
+
+	println(Lista.eliminarMientras(list1, (a:Int) => a < 3))
+
+	println(Lista.eliminarUltimo(list1))
 
 	//
 	///////////////////////////////////////////////////////////////////////////
