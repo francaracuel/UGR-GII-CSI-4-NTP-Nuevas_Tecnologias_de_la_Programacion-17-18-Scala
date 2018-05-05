@@ -14,7 +14,7 @@
 
 package main
 
-import coins.Coins
+import binarySearch.BinarySearch
 
 /**
   * Se encarga de ejecutar los distintos ejercicios.
@@ -91,7 +91,7 @@ object Main extends App {
 	// 3. Contador de posibles cambios de monedas
 	//
 
-	println("Ejercicio 3. Contador de posibles cambios de monedas")
+	/*println("Ejercicio 3. Contador de posibles cambios de monedas")
 	println()
 
 	val coins: Coins = new Coins
@@ -103,7 +103,27 @@ object Main extends App {
 	// cantidad
 	println(coins.getNumberChanges(amount, typeCoins))
 
+	println()*/
+
+	//
+	///////////////////////////////////////////////////////////////////////////
+
+	///////////////////////////////////////////////////////////////////////////
+	// 4. Búsqueda binaria genérica
+	//
+
+	println("Ejercicio 4. Búsqueda binaria genérica")
 	println()
+
+	val binarySearch: BinarySearch = new BinarySearch
+
+	val list1: Array[Char] = Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i')
+	val search1: Char = 'e'
+
+	// Se realiza la búsqueda binaria
+	val result = binarySearch.busquedaBinaria[Char](list1, search1, _ < _)
+
+	println(result)
 
 	//
 	///////////////////////////////////////////////////////////////////////////
