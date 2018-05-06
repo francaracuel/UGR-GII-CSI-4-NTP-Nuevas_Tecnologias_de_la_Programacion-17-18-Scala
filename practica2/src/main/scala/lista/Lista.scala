@@ -247,4 +247,17 @@ object Lista {
 
 	}
 
+	/**
+	  * Convierte un elemento de tipo Lista a tipo List
+	  * @param list - elemento que se quiere convertir
+	  * @tparam A - tipo de valores que contiene la lista
+	  * @return lista de tipo List
+	  */
+	def toList[A](list : Lista[A]): List[A] = list match {
+
+		case Nil => List()
+		case Cons(cabeza, cola) => cabeza::toList(cola)
+
+	}
+
 }
