@@ -30,5 +30,5 @@ class ATrait{
 
 trait B1{self:ATrait => }
 
-class C1 extends B1
-class C2 extends ATrait with B1
+//class C1 extends B1
+//class C2 extends ATrait with B1
