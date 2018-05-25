@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1db5dec2-dc8e-444b-9ab2-6dae1da05444" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../adaptador-scala/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/../adaptador-scala/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/.history" afterPath="$PROJECT_DIR$/../adaptador-scala/target/.history" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/default/adaptador-scala$sources/0.1/resolved.xml.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/default/adaptador-scala$sources/0.1/resolved.xml.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-compile-internal.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-compile.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-optional.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-provided.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-runtime-internal.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-runtime.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-scala-tool.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-test-internal.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/scala-2.12/resolution-cache/reports/default-adaptador-scala$sources-test.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/ivyConfiguration/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change beforePath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/../adaptador-scala/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Conjunto.scala" afterPath="$PROJECT_DIR$/src/main/scala/Conjunto.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +32,8 @@
       <file leaf-file-name="Conjunto.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Conjunto.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="247">
+              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -83,11 +65,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -284,15 +265,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527280174807</updated>
-      <workItem from="1527280179722" duration="279000" />
+      <workItem from="1527280179722" duration="4603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279000" />
+    <option name="totallyTimeSpent" value="4603000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -308,7 +289,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.111600585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -347,7 +328,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Prácticas/Práctica3/Conjunto.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-317">
           <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
@@ -355,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Conjunto.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="247">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
