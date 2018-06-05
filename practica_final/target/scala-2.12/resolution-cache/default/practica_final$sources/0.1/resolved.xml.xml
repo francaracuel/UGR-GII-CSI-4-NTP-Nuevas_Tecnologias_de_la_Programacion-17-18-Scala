@@ -4,7 +4,7 @@
 		module="practica_final$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180605001515"
+		publication="20180605195904"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
