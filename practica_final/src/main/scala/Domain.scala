@@ -18,16 +18,27 @@ class Domain(variables: List[Variable]) {
 
 	private val this.variables: List[Variable] = variables
 	private val weights: List[Int] = calculateWeights
-	private val indices: List[Int] = List.fill(this.variables.size)(1)
+
+	def this() {
+		this(List[Variable]())
+	}
+
+	private def getVariables: List[Variable] = this.variables
 
 	private[this] def calculateWeights: List[Int] = {
+		if(isEmpty) return List()
 		variables.reverse.map(_.state).dropRight(1).
 			scanLeft(1){(element, accum) => element * accum}.reverse
 	}
 
-	private[this] def calculateIndex(indices: List[Int] = indices): Int = {
+	private def calculateIndex(indices: List[Int]): Int = {
+		if(isEmpty) return 0
 		((indices zip weights)(breakOut): Map[Int, Int]).
 			foldLeft(0){ case (accum, (key, value)) => accum + key * value}
+	}
+
+	private def calculateIndex(index: Int): Int = {
+		calculateIndex(List.fill(this.variables.size)(index))
 	}
 
 	private[this] def exist(variable: Variable): Boolean = {
@@ -40,7 +51,10 @@ class Domain(variables: List[Variable]) {
 
 	def getWeights: List[Int] = weights
 
-	def maxIndex: Int = calculateIndex(variables.map(_.state-1)) + 1
+	def maxIndex: Int = {
+		if(isEmpty) return 0
+		calculateIndex(variables.map(_.state-1)) + 1
+	}
 
 	def apply(position: Int): Variable = variables(position)
 
@@ -52,6 +66,8 @@ class Domain(variables: List[Variable]) {
 		if(exist(variable)) return this
 		new Domain(variables :+ variable)
 	}
+
+	def +(domain: Domain): Domain = new Domain(variables ::: domain.getVariables)
 
 	def -(variable: Variable): Domain = {
 		if(!exist(variable)) return this
