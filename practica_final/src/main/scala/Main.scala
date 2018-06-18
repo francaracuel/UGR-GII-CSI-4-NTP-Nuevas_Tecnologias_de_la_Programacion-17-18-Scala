@@ -109,4 +109,35 @@ object Main extends App{
 	//
 	///////////////////////////////////
 
+	///////////////////////////////////
+	// Values y Nodes
+	//
+
+	println()
+
+	val arrayValues1 = new ArrayValues(domain5, List(0, 1, 2))
+	val treeValues1 = new TreeValues(domain5, List(new VarNode(List(new LeafNode(5, 1)), 0)))
+
+	println(arrayValues1)
+	println(treeValues1)
+
+	//
+	///////////////////////////////////
+
+	///////////////////////////////////
+	// Potential
+	//
+
+	println()
+
+	val arrayPotential1 = new ArrayPotential(domain5, arrayValues1)
+	val treePotential1 = new TreePotential(domain5, treeValues1)
+
+	println(arrayPotential1)
+	println(treePotential1)
+
+
+	//
+	///////////////////////////////////
+
 }

@@ -113,6 +113,11 @@ class Assigment(domain: Domain, vals: List[Int]) {
 		new Assigment(new Domain(indexes.map(this.domain.getVariables)), indexes.map(this.values))
 	}
 
+	/**
+	  * Sobreescritura del método toString para poder pintar por pantalla el
+	  * objeto sin ningún tratamiento más
+	  * @return String con el contenido que se quiere mostrar
+	  */
 	override def toString() = {
 		"Domain: %s, Values: %s".format(this.domain, this.values.mkString(", "))
 	}
